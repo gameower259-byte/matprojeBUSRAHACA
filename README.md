@@ -1,4 +1,4 @@
-pip install gir
+pip install git
 
 cd desktop
 
