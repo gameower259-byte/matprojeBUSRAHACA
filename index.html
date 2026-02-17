@@ -286,6 +286,15 @@
       border-color: rgba(106, 167, 255, 0.3);
     }
 
+    .card-media {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid rgba(106, 167, 255, 0.22);
+      margin-bottom: 10px;
+    }
+
     .card h3 {
       margin: 8px 0 6px;
     }
@@ -391,6 +400,34 @@
       line-height: 1.7;
       max-height: 60vh;
       overflow-y: auto;
+    }
+
+    .article-detail {
+      display: grid;
+      gap: 14px;
+    }
+
+    .article-detail h4 {
+      color: var(--accent);
+      margin-bottom: 4px;
+      font-size: 1rem;
+    }
+
+    .article-detail ol,
+    .article-detail ul {
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+
+    .article-detail li + li {
+      margin-top: 6px;
+    }
+
+    .step-block {
+      border: 1px solid rgba(106, 167, 255, 0.22);
+      border-radius: 12px;
+      background: rgba(14, 21, 39, 0.78);
+      padding: 12px;
     }
 
     .empty-state {
@@ -822,11 +859,7 @@
           "https://upload.wikimedia.org/wikipedia/commons/3/3b/Al-Khwarizmi-798-850.jpg",
         summary:
           "Cebirin temel kavramlarını sistemleştirdi, algoritma kavramının doğmasına katkı sağladı ve denklem çözme yöntemlerini yazıya döktü.",
-        highlights: [
-          "Cebirsel denklemler",
-          "Algoritma kavramı",
-          "Astronomi tabloları"
-        ]
+        highlights: ["Cebirsel denklemler", "Algoritma kavramı", "Astronomi tabloları"]
       },
       {
         name: "Pisagor",
@@ -840,6 +873,17 @@
         highlights: ["Pisagor teoremi", "Müzik ve sayı ilişkisi", "Sayı felsefesi"]
       },
       {
+        name: "Hypatia",
+        era: "İskenderiye",
+        specialty: "Geometri ve Astronomi",
+        level: 8,
+        photo:
+          "https://upload.wikimedia.org/wikipedia/commons/4/4b/Hypatia_portrait.png",
+        summary:
+          "İskenderiye okulunda matematik öğretimini güçlendiren Hypatia, antik dönemde bilimsel düşüncenin aktarımında kritik rol oynadı.",
+        highlights: ["Konik kesitler", "Bilim eğitimi", "Felsefe-matematik birlikteliği"]
+      },
+      {
         name: "İbn Sina",
         era: "İslam Dünyası",
         specialty: "Matematiksel Fizik",
@@ -848,11 +892,18 @@
           "https://upload.wikimedia.org/wikipedia/commons/8/8a/Avicenna.jpg",
         summary:
           "Fizik ve matematikte hareket, süreklilik ve ölçme kavramlarını analiz ederek bilimsel yöntemlerin gelişimine katkıda bulundu.",
-        highlights: [
-          "Hareketin nicel analizi",
-          "Ölçme yöntemleri",
-          "Bilim felsefesi"
-        ]
+        highlights: ["Hareketin nicel analizi", "Ölçme yöntemleri", "Bilim felsefesi"]
+      },
+      {
+        name: "Leonhard Euler",
+        era: "Aydınlanma",
+        specialty: "Analiz ve Graf Teorisi",
+        level: 10,
+        photo:
+          "https://upload.wikimedia.org/wikipedia/commons/d/d7/Leonhard_Euler_2.jpg",
+        summary:
+          "Euler, analizden sayı teorisine kadar onlarca alana katkı sundu; fonksiyon notasyonu ve graf teorisinin temellerini geliştirdi.",
+        highlights: ["Euler formülü", "Königsberg problemi", "Modern notasyonlar"]
       },
       {
         name: "Isaac Newton",
@@ -863,11 +914,7 @@
           "https://upload.wikimedia.org/wikipedia/commons/4/4b/Sir_Isaac_Newton_%281643-1727%29.jpg",
         summary:
           "Diferansiyel ve integral hesap ile hareket yasalarını birleştirdi; matematiği fizik yasalarını açıklayan temel araç haline getirdi.",
-        highlights: [
-          "Kalkülüs",
-          "Hareket yasaları",
-          "Yerçekimi kuramı"
-        ]
+        highlights: ["Kalkülüs", "Hareket yasaları", "Yerçekimi kuramı"]
       },
       {
         name: "Carl Friedrich Gauss",
@@ -878,11 +925,18 @@
           "https://upload.wikimedia.org/wikipedia/commons/3/3d/Carl_Friedrich_Gauss.jpg",
         summary:
           "Sayı teorisi, istatistik ve geodezi alanlarında çığır açtı; Gauss dağılımı ve Gauss teoremleriyle modern matematiği şekillendirdi.",
-        highlights: [
-          "Gauss dağılımı",
-          "Modüler aritmetik",
-          "Geodezik ölçümler"
-        ]
+        highlights: ["Gauss dağılımı", "Modüler aritmetik", "Geodezik ölçümler"]
+      },
+      {
+        name: "Sofia Kovalevskaya",
+        era: "Modern Dönem",
+        specialty: "Diferansiyel Denklemler",
+        level: 11,
+        photo:
+          "https://upload.wikimedia.org/wikipedia/commons/3/33/Sofya_Kovalevskaya1.jpg",
+        summary:
+          "Kovalevskaya, diferansiyel denklemler ve mekanik alanındaki çalışmalarıyla modern analizin gelişiminde öncü isimlerden biri oldu.",
+        highlights: ["Kovalevskaya teoremi", "Matematikte kadın öncü", "Mekanik çalışmaları"]
       },
       {
         name: "Emmy Noether",
@@ -893,11 +947,18 @@
           "https://upload.wikimedia.org/wikipedia/commons/4/4b/Emmy_Noether.jpg",
         summary:
           "Simetri ve korunum yasalarını birleştiren Noether teoremiyle modern fiziğin matematiksel temelini güçlendirdi.",
-        highlights: [
-          "Noether teoremi",
-          "Soyut cebir",
-          "Simetri çalışmaları"
-        ]
+        highlights: ["Noether teoremi", "Soyut cebir", "Simetri çalışmaları"]
+      },
+      {
+        name: "Maryam Mirzakhani",
+        era: "21. Yüzyıl",
+        specialty: "Geometri ve Dinamik Sistemler",
+        level: 12,
+        photo:
+          "https://upload.wikimedia.org/wikipedia/commons/c/c8/Maryam_Mirzakhani_2014.jpg",
+        summary:
+          "Riemann yüzeyleri ve modül uzayları üzerine yaptığı çalışmalarla Fields Madalyası kazanan ilk kadın matematikçi oldu.",
+        highlights: ["Fields Madalyası", "Hiperbolik geometri", "Dinamik sistemler"]
       }
     ];
 
@@ -905,50 +966,86 @@
       {
         title: "Pisagor Problemi",
         level: 7,
-        body:
-          "Kenarları 6 cm ve 8 cm olan dik üçgenin hipotenüsü kaç cm'dir? Çözümünü adım adım yazınız.",
-        solution:
-          "Pisagor teoremi uygulanır: 6^2 + 8^2 = 36 + 64 = 100. Hipotenüs √100 = 10 cm bulunur."
+        image: "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=900&q=80",
+        body: "Kenarları 6 cm ve 8 cm olan dik üçgenin hipotenüsü kaç cm'dir? Çözümünü adım adım yazınız.",
+        solution: "Pisagor teoremi uygulanır: 6^2 + 8^2 = 36 + 64 = 100. Hipotenüs √100 = 10 cm bulunur."
+      },
+      {
+        title: "Oran-Orantı Harita Problemi",
+        level: 7,
+        image: "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=900&q=80",
+        body: "1/20000 ölçekli bir haritada 4,5 cm görünen yolun gerçek uzunluğunu kilometre cinsinden bulunuz.",
+        solution: "Gerçek uzunluk: 4,5 × 20000 = 90000 cm = 900 m = 0,9 km."
       },
       {
         title: "Asal Sayı Avı",
         level: 8,
-        body:
-          "1 ile 50 arasındaki asal sayıları listeleyiniz. Asal sayıların toplamını bulunuz.",
-        solution:
-          "Asallar: 2,3,5,7,11,13,17,19,23,29,31,37,41,43,47. Toplam 328."
+        image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=900&q=80",
+        body: "1 ile 50 arasındaki asal sayıları listeleyiniz. Asal sayıların toplamını bulunuz.",
+        solution: "Asallar: 2,3,5,7,11,13,17,19,23,29,31,37,41,43,47. Toplam 328."
+      },
+      {
+        title: "Doğrusal Denklem Sistemi",
+        level: 8,
+        image: "https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=900&q=80",
+        body: "x+y=12 ve x-y=4 denklem sistemini çözünüz.",
+        solution: "Denklemler toplanır: 2x=16 → x=8. Buradan y=4 bulunur."
       },
       {
         title: "Lineer Fonksiyon Problemi",
         level: 9,
-        body:
-          "f(x)=2x+5 doğrusu x eksenini hangi noktada keser? Kesim noktasını bulunuz.",
-        solution:
-          "x ekseninde y=0 alınır: 0=2x+5 => x=-2.5. Kesim noktası (-2.5, 0)."
+        image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80",
+        body: "f(x)=2x+5 doğrusu x eksenini hangi noktada keser? Kesim noktasını bulunuz.",
+        solution: "x ekseninde y=0 alınır: 0=2x+5 => x=-2.5. Kesim noktası (-2.5, 0)."
+      },
+      {
+        title: "Parabol Tepe Noktası",
+        level: 9,
+        image: "https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?auto=format&fit=crop&w=900&q=80",
+        body: "y=x^2-6x+5 parabolünün tepe noktasını bulunuz.",
+        solution: "x=-b/2a=6/2=3. y=3^2-18+5=-4. Tepe noktası (3,-4)."
       },
       {
         title: "Olasılık Problemi",
         level: 10,
-        body:
-          "Bir torbada 5 kırmızı, 3 mavi top vardır. Rastgele çekilen topun mavi olma olasılığı nedir?",
-        solution:
-          "Toplam 8 top vardır. Mavi olasılığı 3/8."
+        image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80",
+        body: "Bir torbada 5 kırmızı, 3 mavi top vardır. Rastgele çekilen topun mavi olma olasılığı nedir?",
+        solution: "Toplam 8 top vardır. Mavi olasılığı 3/8."
+      },
+      {
+        title: "Permütasyon Kilidi",
+        level: 10,
+        image: "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=900&q=80",
+        body: "0,1,2,3,4 rakamlarıyla tekrar etmeden 3 basamaklı kaç farklı şifre yazılabilir?",
+        solution: "5·4·3 = 60 farklı şifre yazılır."
       },
       {
         title: "Türev Uygulaması",
         level: 11,
-        body:
-          "f(x)=x^3-3x fonksiyonunun yerel maksimum ve minimum noktalarını bulunuz.",
-        solution:
-          "f'(x)=3x^2-3=0 => x=±1. f''(x)=6x. x=-1 için maksimum, x=1 için minimum."
+        image: "https://images.unsplash.com/photo-1509228627152-72ae9ae6848d?auto=format&fit=crop&w=900&q=80",
+        body: "f(x)=x^3-3x fonksiyonunun yerel maksimum ve minimum noktalarını bulunuz.",
+        solution: "f'(x)=3x^2-3=0 => x=±1. f''(x)=6x. x=-1 için maksimum, x=1 için minimum."
+      },
+      {
+        title: "Limit Süreklilik Sorusu",
+        level: 11,
+        image: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=900&q=80",
+        body: "f(x)=(x^2-4)/(x-2) için x→2 limitini bulunuz.",
+        solution: "İfade (x-2)(x+2)/(x-2)=x+2 olur. Limit 4'tür."
       },
       {
         title: "İntegral Problemi",
         level: 12,
-        body:
-          "\\int_0^2 (3x^2) dx integralini hesaplayınız.",
-        solution:
-          "∫ 3x^2 dx = x^3. 0-2 arası: 2^3-0=8."
+        image: "https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?auto=format&fit=crop&w=900&q=80",
+        body: "\int_0^2 (3x^2) dx integralini hesaplayınız.",
+        solution: "∫ 3x^2 dx = x^3. 0-2 arası: 2^3-0=8."
+      },
+      {
+        title: "Belirli İntegral Alanı",
+        level: 12,
+        image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80",
+        body: "y=2x doğrusu ile x=0, x=3 arasında kalan alanı belirli integral ile bulunuz.",
+        solution: "Alan = ∫_0^3 2x dx = [x^2]_0^3 = 9 birimkare."
       }
     ];
 
@@ -956,34 +1053,72 @@
       {
         title: "Matematik Tarihi Zaman Çizelgesi",
         level: 7,
-        body:
-          "Sınıfınızla birlikte matematik tarihindeki 10 önemli gelişmeyi seçin ve görsel bir zaman çizelgesi hazırlayın.",
-        outcome:
-          "Poster veya dijital sunum; her gelişme için kısa açıklama ve kaynakça."
+        image: "https://images.unsplash.com/photo-1461360228754-6e81c478b882?auto=format&fit=crop&w=900&q=80",
+        body: "Sınıfınızla birlikte matematik tarihindeki 10 önemli gelişmeyi seçin ve görsel bir zaman çizelgesi hazırlayın.",
+        outcome: "Poster veya dijital sunum; her gelişme için kısa açıklama ve kaynakça."
+      },
+      {
+        title: "Geometrik Şehir Tasarımı",
+        level: 7,
+        image: "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80",
+        body: "Üçgen, kare ve çemberlerden oluşan bir şehir planı çizip alan-çevre hesaplarını raporlayın.",
+        outcome: "Ölçekli şehir posteri ve hesap tabloları."
       },
       {
         title: "Asal Sayı Görselleştirme",
         level: 9,
-        body:
-          "1-200 arasındaki asal sayıları görselleştiren bir tablo veya kod çalışması hazırlayın.",
-        outcome:
-          "Asal sayıların dağılımını gösteren grafik ve kısa yorum."
+        image: "https://images.unsplash.com/photo-1551281044-8b5bd55f8f57?auto=format&fit=crop&w=900&q=80",
+        body: "1-200 arasındaki asal sayıları görselleştiren bir tablo veya kod çalışması hazırlayın.",
+        outcome: "Asal sayıların dağılımını gösteren grafik ve kısa yorum."
+      },
+      {
+        title: "Fonksiyon Avı Mini Belgeseli",
+        level: 9,
+        image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
+        body: "Günlük hayatta karşılaşılan doğrusal ve parabolik ilişkileri videoyla belgeleyin.",
+        outcome: "3-5 dakikalık video, fonksiyon denklemleri ve yorum raporu."
       },
       {
         title: "Köprüler Problemi Modeli",
         level: 10,
-        body:
-          "Königsberg köprüleri problemini karton veya dijital ortamda modelleyin ve graf teorisiyle açıklayın.",
-        outcome:
-          "Graf çizimi, Euler yolu açıklaması ve sonuç raporu."
+        image: "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=900&q=80",
+        body: "Königsberg köprüleri problemini karton veya dijital ortamda modelleyin ve graf teorisiyle açıklayın.",
+        outcome: "Graf çizimi, Euler yolu açıklaması ve sonuç raporu."
+      },
+      {
+        title: "İstatistik Sınıf Anketi",
+        level: 10,
+        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80",
+        body: "En az 50 kişilik veri toplayıp ortalama, medyan ve standart sapma hesaplayın.",
+        outcome: "Veri tablosu, grafikler ve çıkarımların yer aldığı infografik."
+      },
+      {
+        title: "Türevle Optimizasyon",
+        level: 11,
+        image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80",
+        body: "Gerçek bir üretim/satış senaryosunda maliyet fonksiyonu kurup maksimum-minimum analizi yapın.",
+        outcome: "Fonksiyon modeli, türev adımları ve karar önerileri raporu."
+      },
+      {
+        title: "Fraktal Sanat Galerisi",
+        level: 11,
+        image: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=900&q=80",
+        body: "Koch kar tanesi veya Sierpinski üçgeni üretip fraktal boyut hakkında kısa araştırma yapın.",
+        outcome: "Dijital fraktal koleksiyonu ve açıklama kartları."
       },
       {
         title: "Kuantum Matematiği Sunumu",
         level: 12,
-        body:
-          "Hilbert uzayları ve kuantum durumlarını açıklayan bir sunum hazırlayın.",
-        outcome:
-          "5-8 slaytlık sunum, örnek vektör gösterimleri ve kaynakça."
+        image: "https://images.unsplash.com/photo-1635070041409-e63e783ce3c1?auto=format&fit=crop&w=900&q=80",
+        body: "Hilbert uzayları ve kuantum durumlarını açıklayan bir sunum hazırlayın.",
+        outcome: "5-8 slaytlık sunum, örnek vektör gösterimleri ve kaynakça."
+      },
+      {
+        title: "Şifreleme ve Modüler Aritmetik Atölyesi",
+        level: 12,
+        image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=80",
+        body: "RSA mantığını küçük sayılarla adım adım gösteren bir sınıf atölyesi tasarlayın.",
+        outcome: "Şifreleme akış şeması, örnek mesajlar ve çözümleme bölümü."
       }
     ];
 
@@ -1098,6 +1233,7 @@
                     <div class="card">
                       <span class="meta">${item.level}. Sınıf Problemi</span>
                       <h3>${item.title}</h3>
+                      <img class="card-media" src="${item.image}" alt="${item.title} görseli" loading="lazy" />
                       <p>${item.body}</p>
                       <p><strong>Çözüm:</strong> ${item.solution}</p>
                     </div>`
@@ -1123,6 +1259,7 @@
                     <div class="card">
                       <span class="meta">${item.level}. Sınıf Projesi</span>
                       <h3>${item.title}</h3>
+                      <img class="card-media" src="${item.image}" alt="${item.title} proje görseli" loading="lazy" />
                       <p>${item.body}</p>
                       <p><strong>Beklenen Çıktı:</strong> ${item.outcome}</p>
                     </div>`
@@ -1266,14 +1403,80 @@
       renderData(activeTab, filtered, filteredScientists, filteredProblems, filteredProjects);
     }
 
-    function openArticleModal(articleTitle) {
-      const article = mathEvents.find((item) => item.article === articleTitle);
-      if (!article) return;
+    function buildDetailedArticleContent(article) {
       const detail =
         articleDetails[article.article] ||
         `${article.body} Bu bölüm, konuya ilişkin tarihsel arka planı ve modern uygulamaları detaylandırır.`;
+
+      const defaultSteps = [
+        "Temel kavramları ve tarihsel bağlamı tanımla.",
+        "Ana teoremi/formülü sembollerle yaz ve değişkenleri açıklığa kavuştur.",
+        "Teoremi adım adım küçük bir örnek üzerinde uygula.",
+        "Sonucu doğrulama, yorumlama ve farklı bir durumda genelleme yap."
+      ];
+
+      const stepByStepMap = {
+        "Dik Üçgenler Üzerine Tarihsel Bir İnceleme": [
+          "Dik üçgen tanımını kur: hipotenüsün karşısındaki açının 90° olduğunu belirt.",
+          "Model kur: kenarları a ve b, hipotenüsü c olacak şekilde teoremi yaz: a²+b²=c².",
+          "Sayısal uygulama yap: a=9, b=12 için c²=81+144=225 ⇒ c=15.",
+          "Doğrulama yap: 9-12-15 üçlüsünün benzerlik ve alan yaklaşımıyla da sağlandığını göster."
+        ],
+        "Asal Sayıların Sırları: Klasikten Moderne": [
+          "Asal sayı tanımını netleştir: 1'den büyük, yalnızca 1'e ve kendisine bölünen sayılar.",
+          "Elek yöntemiyle sistematik tarama yap: 2'den başlayıp katları çıkar.",
+          "Dağılım gözlemi yap: π(x) fonksiyonu ile yaklaşık davranışı yorumla.",
+          "Uygulamaya bağla: seçilen iki büyük asalla anahtar üretiminin mantığını özetle."
+        ],
+        "Diferansiyel Hesabın Evrimi": [
+          "Fonksiyonu seç: f(x)=x³-2x için değişim oranını hedefle.",
+          "Tanım uygula: f'(x)=lim(h→0)[f(x+h)-f(x)]/h sürecini aç.",
+          "Sadeleştirerek sonuca ulaş: türev 3x²-2 elde edilir.",
+          "Kritik nokta analizi yap: 3x²-2=0 çözümüyle artma-azalma davranışını yorumla."
+        ],
+        "İntegral Kavramının Doğuşu": [
+          "Alan problemi kur: [a,b] aralığını küçük dilimlere ayır.",
+          "Riemann toplamı yaz: Σ f(xᵢ*)Δx ile yaklaşım oluştur.",
+          "Limitte integral tanımına geç: ∫ₐᵇ f(x)dx.",
+          "Temel teoremi uygula: F'(x)=f(x) ise ∫ₐᵇ f(x)dx = F(b)-F(a)."
+        ]
+      };
+
+      const steps = stepByStepMap[article.article] || defaultSteps;
+
+      return `
+        <div class="article-detail">
+          <section>
+            <h4>Detaylı Akademik Açıklama</h4>
+            <p>${detail}</p>
+          </section>
+          <section>
+            <h4>Ana Formül / Teorem</h4>
+            <div class="formula-display">$$${article.eq}$$</div>
+          </section>
+          <section>
+            <h4>Adım Adım Çözüm Akışı</h4>
+            <ol>
+              ${steps.map((step) => `<li class="step-block">${step}</li>`).join("")}
+            </ol>
+          </section>
+          <section>
+            <h4>Kısa Kontrol Listesi</h4>
+            <ul>
+              <li>Değişkenler ve birimler net olarak tanımlandı mı?</li>
+              <li>İşlem geçişleri matematiksel olarak tutarlı mı?</li>
+              <li>Sonuç, başlangıç koşullarıyla karşılaştırılıp doğrulandı mı?</li>
+              <li>Modelin gerçek hayat veya ileri seviye matematik bağlantısı kuruldu mu?</li>
+            </ul>
+          </section>
+        </div>`;
+    }
+
+    function openArticleModal(articleTitle) {
+      const article = mathEvents.find((item) => item.article === articleTitle);
+      if (!article) return;
       document.getElementById("modal-title").textContent = article.article;
-      document.getElementById("modal-body").textContent = detail;
+      document.getElementById("modal-body").innerHTML = buildDetailedArticleContent(article);
       document.getElementById("modal-source").textContent = `Kaynak: ${article.article}`;
       const modal = document.getElementById("article-modal");
       modal.classList.add("active");
